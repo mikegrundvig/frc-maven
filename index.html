@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>frc-maven</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --line: #d1d9e0;
+    --code: #f6f8fa;
+    --link: #0969da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --line: #3d444d;
+      --code: #151b23;
+      --link: #4493f8;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { margin: 0 0 4px; font-size: 1.8rem; }
+  h2 { margin-top: 2rem; font-size: 1.2rem; }
+  p.lead { margin-top: 0; color: var(--muted); }
+  a { color: var(--link); }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
+  code { background: var(--code); padding: 1px 4px; border-radius: 4px; }
+  pre { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 12px; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+  td.versions { white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>frc-maven</h1>
+  <p class="lead">A Maven repository for a set of FRC robot libraries: plain files, served by GitHub Pages.</p>
+
+  <p>Add it to a Gradle build, limited to the libraries' group:</p>
+  <pre><code>repositories {
+    exclusiveContent {
+        forRepository {
+            maven { url = "https://mikegrundvig.github.io/frc-maven/" }
+        }
+        filter { includeGroup "com.michaelgrundvig.frc" }
+    }
+}
+dependencies {
+    implementation "com.michaelgrundvig.frc:frc-robot-runtime:<span id="latest">2026.10.20</span>"
+}</code></pre>
+  <p>Versions are release dates, one for all the libraries. They are pre-release: anything may change
+  from one to the next, with no promise of compatibility. WPILib and the vendor libraries are not
+  here; a robot program brings its own. The <a href="https://github.com/mikegrundvig/frc-robot-template">robot template</a>
+  is set up to use these already.</p>
+
+  <h2>Libraries</h2>
+  <div class="table">
+  <table>
+    <thead><tr><th>Artifact</th><th>What</th><th>Versions</th></tr></thead>
+    <tbody>
+      <tr data-artifact="frc-robot-runtime"><td><code>frc-robot-runtime</code></td><td>The robot program every robot shares, and the harness a team tests with (<a href="https://github.com/mikegrundvig/frc-robot-runtime">source</a>)</td><td class="versions">2026.10.20</td></tr>
+      <tr data-artifact="frc-robot-simulation"><td><code>frc-robot-simulation</code></td><td>The simulated world's physics and sensors (<a href="https://github.com/mikegrundvig/frc-robot-runtime">source</a>)</td><td class="versions">2026.10.20</td></tr>
+      <tr data-artifact="frc-gradle-plugins"><td><code>frc-gradle-plugins</code></td><td>The runtime's Gradle plugins: <code>frc.advantagescope-assets</code> (<a href="https://github.com/mikegrundvig/frc-robot-runtime">source</a>)</td><td class="versions">2026.10.20</td></tr>
+      <tr data-artifact="frc-robot-model"><td><code>frc-robot-model</code></td><td>What an FRC field and robot are, as data (<a href="https://github.com/mikegrundvig/frc-robot-model">source</a>)</td><td class="versions">2026.10.20</td></tr>
+      <tr data-artifact="frc-docs-processor"><td><code>frc-docs-processor</code></td><td>Writes configuration records' Javadoc into the jar (<a href="https://github.com/mikegrundvig/frc-robot-model">source</a>)</td><td class="versions">2026.10.20</td></tr>
+      <tr data-artifact="frc-localization"><td><code>frc-localization</code></td><td>Where the robot is, from its wheels, IMUs and cameras (<a href="https://github.com/mikegrundvig/frc-localization">source</a>)</td><td class="versions">2026.10.20</td></tr>
+      <tr data-artifact="frc-pitwall"><td><code>frc-pitwall</code></td><td>The robot program's own web page and API (<a href="https://github.com/mikegrundvig/frc-pitwall">source</a>)</td><td class="versions">2026.10.20</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>All in the group <code>com.michaelgrundvig.frc</code>, in the standard Maven layout
+  (<code>com/michaelgrundvig/frc/&lt;artifact&gt;/&lt;version&gt;/</code>), with sources and Javadoc jars.
+  How a release is made: <a href="https://github.com/mikegrundvig/frc-maven">github.com/mikegrundvig/frc-maven</a>.</p>
+</main>
+<script>
+  // The versions above as of this page's last edit; each library's maven-metadata.xml has every
+  // release since, newest last.
+  for (const row of document.querySelectorAll("tr[data-artifact]")) {
+    const artifact = row.dataset.artifact;
+    fetch(`com/michaelgrundvig/frc/${artifact}/maven-metadata.xml`)
+      .then((response) => (response.ok ? response.text() : Promise.reject(response.status)))
+      .then((text) => {
+        const xml = new DOMParser().parseFromString(text, "application/xml");
+        const versions = [...xml.querySelectorAll("versions > version")].map((v) => v.textContent);
+        if (versions.length === 0) return;
+        row.querySelector(".versions").textContent = versions.slice().reverse().join(", ");
+        if (artifact === "frc-robot-runtime") {
+          document.getElementById("latest").textContent = versions[versions.length - 1];
+        }
+      })
+      .catch(() => {});
+  }
+</script>
+</body>
+</html>
