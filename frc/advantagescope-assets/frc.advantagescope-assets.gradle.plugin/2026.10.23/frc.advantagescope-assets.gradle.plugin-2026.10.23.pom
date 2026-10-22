@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>frc.advantagescope-assets</groupId>
+  <artifactId>frc.advantagescope-assets.gradle.plugin</artifactId>
+  <version>2026.10.23</version>
+  <packaging>pom</packaging>
+  <name>FRC tool-config Gradle plugins</name>
+  <description>Gradle plugins that generate a tool's files from a robot program's configuration and check them against what's committed: AdvantageScope's robot assets (frc.advantagescope-assets).</description>
+  <url>https://github.com/mikegrundvig/frc-robot-runtime</url>
+  <licenses>
+    <license>
+      <name>BSD 3-Clause License</name>
+      <url>https://github.com/mikegrundvig/frc-robot-runtime/blob/main/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mikegrundvig</id>
+      <name>Michael Grundvig</name>
+      <email>1361573+mikegrundvig@users.noreply.github.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/mikegrundvig/frc-robot-runtime.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/mikegrundvig/frc-robot-runtime.git</developerConnection>
+    <url>https://github.com/mikegrundvig/frc-robot-runtime</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.michaelgrundvig.frc</groupId>
+      <artifactId>frc-gradle-plugins</artifactId>
+      <version>2026.10.23</version>
+    </dependency>
+  </dependencies>
+</project>
