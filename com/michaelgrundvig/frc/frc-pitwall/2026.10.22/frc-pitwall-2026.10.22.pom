@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.michaelgrundvig.frc</groupId>
+  <artifactId>frc-pitwall</artifactId>
+  <version>2026.10.22</version>
+  <name>Pitwall</name>
+  <description>The robot program's own web page and API: status, actions, live checked tuning of typed configuration, and the robot's joints and world drawn as its model says them.</description>
+  <url>https://github.com/mikegrundvig/frc-pitwall</url>
+  <licenses>
+    <license>
+      <name>BSD 3-Clause License</name>
+      <url>https://github.com/mikegrundvig/frc-pitwall/blob/main/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mikegrundvig</id>
+      <name>Michael Grundvig</name>
+      <email>1361573+mikegrundvig@users.noreply.github.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/mikegrundvig/frc-pitwall.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/mikegrundvig/frc-pitwall.git</developerConnection>
+    <url>https://github.com/mikegrundvig/frc-pitwall</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.jspecify</groupId>
+      <artifactId>jspecify</artifactId>
+      <version>1.0.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.michaelgrundvig.frc</groupId>
+      <artifactId>frc-robot-model</artifactId>
+      <version>2026.10.22</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.wpilib.wpiunits</groupId>
+      <artifactId>wpiunits-java</artifactId>
+      <version>2027.0.0-alpha-7</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
