@@ -13,7 +13,7 @@ puts the release online. `.nojekyll` has Pages serve every file as it is.
 
 ## The libraries
 
-Every library of a release has the same version, the date of the release (`2026.10.20`). They are
+Every library of a release has the same version, the date of the release (`2026.10.21`). They are
 pre-release: anything may change from one version to the next, with no promise of compatibility.
 
 | Artifact (`com.michaelgrundvig.frc:`) | What | Source |
@@ -51,14 +51,14 @@ repositories {
     }
 }
 dependencies {
-    implementation "com.michaelgrundvig.frc:frc-robot-runtime:2026.10.20"
-    testImplementation testFixtures("com.michaelgrundvig.frc:frc-robot-runtime:2026.10.20")
+    implementation "com.michaelgrundvig.frc:frc-robot-runtime:2026.10.21"
+    testImplementation testFixtures("com.michaelgrundvig.frc:frc-robot-runtime:2026.10.21")
 }
 ```
 
 The plugin is found through `pluginManagement` in `settings.gradle`, the same repository with the
 plugin's marker group too (`includeGroup "frc.advantagescope-assets"`), then
-`id "frc.advantagescope-assets" version "2026.10.20"`.
+`id "frc.advantagescope-assets" version "2026.10.21"`.
 
 ## Making a release
 
