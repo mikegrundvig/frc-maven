@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.michaelgrundvig.frc</groupId>
+  <artifactId>frc-robot-model</artifactId>
+  <version>2026.10.24</version>
+  <name>FRC robot model</name>
+  <description>What an FRC field and robot are, as data a robot program, a simulator and its tools all read: the validation kit, the field, and the robot's definition.</description>
+  <url>https://github.com/mikegrundvig/frc-robot-model</url>
+  <licenses>
+    <license>
+      <name>BSD 3-Clause License</name>
+      <url>https://github.com/mikegrundvig/frc-robot-model/blob/main/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mikegrundvig</id>
+      <name>Michael Grundvig</name>
+      <email>1361573+mikegrundvig@users.noreply.github.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/mikegrundvig/frc-robot-model.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/mikegrundvig/frc-robot-model.git</developerConnection>
+    <url>https://github.com/mikegrundvig/frc-robot-model</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.jspecify</groupId>
+      <artifactId>jspecify</artifactId>
+      <version>1.0.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.wpilib.wpimath</groupId>
+      <artifactId>wpimath-java</artifactId>
+      <version>2027.0.0-alpha-7</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.wpilib.wpiunits</groupId>
+      <artifactId>wpiunits-java</artifactId>
+      <version>2027.0.0-alpha-7</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.wpilib.wpiutil</groupId>
+      <artifactId>wpiutil-java</artifactId>
+      <version>2027.0.0-alpha-7</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.wpilib.fields</groupId>
+      <artifactId>fields-java</artifactId>
+      <version>2027.0.0-alpha-7</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ejml</groupId>
+      <artifactId>ejml-simple</artifactId>
+      <version>0.46.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>us.hebi.quickbuf</groupId>
+      <artifactId>quickbuf-runtime</artifactId>
+      <version>1.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.avaje</groupId>
+      <artifactId>avaje-jsonb</artifactId>
+      <version>3.14</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
