@@ -13,8 +13,9 @@ puts the release online. `.nojekyll` has Pages serve every file as it is.
 
 ## The libraries
 
-Every library of a release has the same version, the date of the release (`2026.10.24`). They are
-pre-release: anything may change from one version to the next, with no promise of compatibility.
+Every library of a release has the same version, the date of the release (`2026.10.24`), except
+Visor's client, which carries Visor's own version. They are pre-release: anything may change from
+one version to the next, with no promise of compatibility.
 
 | Artifact (`com.michaelgrundvig.frc:`) | What | Source |
 |---|---|---|
@@ -25,6 +26,7 @@ pre-release: anything may change from one version to the next, with no promise o
 | `frc-docs-processor` | The annotation processor that writes configuration records' Javadoc into the jar | [frc-robot-model](https://github.com/mikegrundvig/frc-robot-model), `docs-processor` |
 | `frc-localization` | Where the robot is, from its wheels, IMUs and cameras; (test fixtures) the localizer conformance suite | [frc-localization](https://github.com/mikegrundvig/frc-localization) |
 | `frc-pitwall` | The robot program's own web page and API | [frc-pitwall](https://github.com/mikegrundvig/frc-pitwall) |
+| `frc-visor-client` | The robot's side of Visor, AprilTag vision on a coprocessor: receiving its frames, and answering its clock sync with the robot's clock | [frc-visor](https://github.com/mikegrundvig/frc-visor), `client` |
 
 Each library also publishes a `-test-sources` jar, its tests' sources, which the runtime's guides
 check their examples against.
