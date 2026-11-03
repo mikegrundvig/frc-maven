@@ -13,7 +13,7 @@ puts the release online. `.nojekyll` has Pages serve every file as it is.
 
 ## The libraries
 
-Every library of a release has the same version, the date of the release (`2026.10.24`), except
+Every library of a release has the same version, the date of the release (`2026.11.2`), except
 Visor's client, which carries Visor's own version. They are pre-release: anything may change from
 one version to the next, with no promise of compatibility.
 
