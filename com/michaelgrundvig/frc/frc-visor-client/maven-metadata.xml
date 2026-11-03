@@ -3,12 +3,13 @@
   <groupId>com.michaelgrundvig.frc</groupId>
   <artifactId>frc-visor-client</artifactId>
   <versioning>
-    <latest>2026.11.3</latest>
-    <release>2026.11.3</release>
+    <latest>2026.11.4</latest>
+    <release>2026.11.4</release>
     <versions>
       <version>2026.11.2</version>
       <version>2026.11.3</version>
+      <version>2026.11.4</version>
     </versions>
-    <lastUpdated>20261103145614</lastUpdated>
+    <lastUpdated>20261103185109</lastUpdated>
   </versioning>
 </metadata>
