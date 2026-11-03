@@ -1,0 +1,374 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-robot-runtime",
+    "version": "2026.11.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-model",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-localization",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-simulation",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-pitwall",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-visor-client",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-robot-runtime-2026.11.2.jar",
+          "url": "frc-robot-runtime-2026.11.2.jar",
+          "size": 770467,
+          "sha512": "73eb41c1621a3fe6cf2cda92f3f2ad02a9c3ec81aa74d4c9cf39d5e5069e6a0be4f0ce9a91e79a4a5f181dfc31fc12f9630659424dbb43f373cb4fef98152f17",
+          "sha256": "314ee8d51cc3c62e7985cdc724f8469675393f5ffaadb9fd9a79d05f24e952c4",
+          "sha1": "5edd187589932bc82ee9d1867e21da029371558c",
+          "md5": "90ac98c10285f639747c95f45db01c7f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-model",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-localization",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-simulation",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-pitwall",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-visor-client",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-robot-runtime-2026.11.2.jar",
+          "url": "frc-robot-runtime-2026.11.2.jar",
+          "size": 770467,
+          "sha512": "73eb41c1621a3fe6cf2cda92f3f2ad02a9c3ec81aa74d4c9cf39d5e5069e6a0be4f0ce9a91e79a4a5f181dfc31fc12f9630659424dbb43f373cb4fef98152f17",
+          "sha256": "314ee8d51cc3c62e7985cdc724f8469675393f5ffaadb9fd9a79d05f24e952c4",
+          "sha1": "5edd187589932bc82ee9d1867e21da029371558c",
+          "md5": "90ac98c10285f639747c95f45db01c7f"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-runtime",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "6.1.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.junit.jupiter",
+          "module": "junit-jupiter-api"
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.27.7"
+          }
+        },
+        {
+          "group": "com.tngtech.archunit",
+          "module": "archunit",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-simulation",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.michaelgrundvig.frc",
+              "name": "frc-robot-simulation-test-fixtures"
+            }
+          ]
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-localization",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.michaelgrundvig.frc",
+              "name": "frc-localization-test-fixtures"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-robot-runtime-2026.11.2-test-fixtures.jar",
+          "url": "frc-robot-runtime-2026.11.2-test-fixtures.jar",
+          "size": 271865,
+          "sha512": "8b405c78cd0952c59ffb1b7bce1318adbd0574b786f7ba9f9bc9704e13210b3d732050abecfead381ed9ec40cf69723736a447e3ed3a5efae5de703b4ca4d102",
+          "sha256": "b5d71f74d444591f7f0a0fb5f32105e2ca4ce5e164ed5007d6e0d7679e42f08a",
+          "sha1": "da1c03aaf591fdd1cf25beb0210e458bed1f5fc0",
+          "md5": "cb1f51eb4d7cce2c474628c70a9b34aa"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "name": "frc-robot-runtime-test-fixtures",
+          "version": "2026.11.2"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.junit.platform",
+          "module": "junit-platform-launcher"
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-runtime",
+          "version": {
+            "requires": "2026.11.2"
+          }
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "6.1.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.junit.jupiter",
+          "module": "junit-jupiter-api"
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.27.7"
+          }
+        },
+        {
+          "group": "com.tngtech.archunit",
+          "module": "archunit",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-simulation",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.michaelgrundvig.frc",
+              "name": "frc-robot-simulation-test-fixtures"
+            }
+          ]
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-localization",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "requestedCapabilities": [
+            {
+              "group": "com.michaelgrundvig.frc",
+              "name": "frc-localization-test-fixtures"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-robot-runtime-2026.11.2-test-fixtures.jar",
+          "url": "frc-robot-runtime-2026.11.2-test-fixtures.jar",
+          "size": 271865,
+          "sha512": "8b405c78cd0952c59ffb1b7bce1318adbd0574b786f7ba9f9bc9704e13210b3d732050abecfead381ed9ec40cf69723736a447e3ed3a5efae5de703b4ca4d102",
+          "sha256": "b5d71f74d444591f7f0a0fb5f32105e2ca4ce5e164ed5007d6e0d7679e42f08a",
+          "sha1": "da1c03aaf591fdd1cf25beb0210e458bed1f5fc0",
+          "md5": "cb1f51eb4d7cce2c474628c70a9b34aa"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "name": "frc-robot-runtime-test-fixtures",
+          "version": "2026.11.2"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-robot-runtime-2026.11.2-sources.jar",
+          "url": "frc-robot-runtime-2026.11.2-sources.jar",
+          "size": 457755,
+          "sha512": "3de67d1005ba24828c9f445eae0fe3d8309487cb666a7e6ca3ca1a2141789bba591e7ea69068987a61abb3e890576591dac226af0d91819e1eb46f6ad3d9f17c",
+          "sha256": "5fea67d9964ff0f74cab287d3a7910f1bcc1ec5852f467abb838f126eced486f",
+          "sha1": "c902540fc0ee39e7b7a773d80c7efea5e9727d30",
+          "md5": "ece697e8a4df6221cd4a3512a2a673ed"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-robot-runtime-2026.11.2-javadoc.jar",
+          "url": "frc-robot-runtime-2026.11.2-javadoc.jar",
+          "size": 4759014,
+          "sha512": "91a5d589e240389ff4abcb76a3402d1b819284c8a828fb369a7e19eb711d0d23d3a7c05b57f6e2c1255b03e36e902a24acdbd2fecdff124a005a7c0ce9742dfe",
+          "sha256": "084db86fb622bca26ab2390223df84803823c2de60d206f5473fd4fcbff8e8f3",
+          "sha1": "fd99c265643a3e61045be80b808a5f2656dfecf7",
+          "md5": "93dff8f7ef7110d0f949a87d935a1acc"
+        }
+      ]
+    }
+  ]
+}
