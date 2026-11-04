@@ -1,0 +1,234 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-localization",
+    "version": "2026.11.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-model",
+          "version": {
+            "requires": "2026.11.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-localization-2026.11.6.jar",
+          "url": "frc-localization-2026.11.6.jar",
+          "size": 396280,
+          "sha512": "de32411c62c16319922211f9364ed6ab5aa41fd64c7ac3ac442fa9831576be125bf772d7e104769f13fbb256c1f491f3274e8cf7f11a6a919c39e3f121789fc0",
+          "sha256": "abe83155fe43050a4fcbceb5026456923d958f1b52746f1dee27619e32001952",
+          "sha1": "2dd469bca3d58368f43789142354c41e39f02802",
+          "md5": "4dd8de186d1cb55845982c644e551518"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-model",
+          "version": {
+            "requires": "2026.11.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-localization-2026.11.6.jar",
+          "url": "frc-localization-2026.11.6.jar",
+          "size": 396280,
+          "sha512": "de32411c62c16319922211f9364ed6ab5aa41fd64c7ac3ac442fa9831576be125bf772d7e104769f13fbb256c1f491f3274e8cf7f11a6a919c39e3f121789fc0",
+          "sha256": "abe83155fe43050a4fcbceb5026456923d958f1b52746f1dee27619e32001952",
+          "sha1": "2dd469bca3d58368f43789142354c41e39f02802",
+          "md5": "4dd8de186d1cb55845982c644e551518"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-localization",
+          "version": {
+            "requires": "2026.11.6"
+          }
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "6.1.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.junit.jupiter",
+          "module": "junit-jupiter-api"
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.27.7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-localization-2026.11.6-test-fixtures.jar",
+          "url": "frc-localization-2026.11.6-test-fixtures.jar",
+          "size": 27699,
+          "sha512": "f6d98557a8713a6b1a057059ff4936544dbe2bd53477d56e96b5364932636cb29eb30f39beff37c5232c30541ba3f87f95278813a970c2672f26e5411f8f3004",
+          "sha256": "ff0138a723f92e52801e1f8d065c171a3e710a97970b1e49e5867947f7815ec3",
+          "sha1": "fea038650797b063061ad135b7230d20bc200af8",
+          "md5": "99eb0b8a2f73d47a00eccff7dae07573"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "name": "frc-localization-test-fixtures",
+          "version": "2026.11.6"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-localization",
+          "version": {
+            "requires": "2026.11.6"
+          }
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "6.1.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.junit.jupiter",
+          "module": "junit-jupiter-api"
+        },
+        {
+          "group": "org.assertj",
+          "module": "assertj-core",
+          "version": {
+            "requires": "3.27.7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-localization-2026.11.6-test-fixtures.jar",
+          "url": "frc-localization-2026.11.6-test-fixtures.jar",
+          "size": 27699,
+          "sha512": "f6d98557a8713a6b1a057059ff4936544dbe2bd53477d56e96b5364932636cb29eb30f39beff37c5232c30541ba3f87f95278813a970c2672f26e5411f8f3004",
+          "sha256": "ff0138a723f92e52801e1f8d065c171a3e710a97970b1e49e5867947f7815ec3",
+          "sha1": "fea038650797b063061ad135b7230d20bc200af8",
+          "md5": "99eb0b8a2f73d47a00eccff7dae07573"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.michaelgrundvig.frc",
+          "name": "frc-localization-test-fixtures",
+          "version": "2026.11.6"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-localization-2026.11.6-sources.jar",
+          "url": "frc-localization-2026.11.6-sources.jar",
+          "size": 203652,
+          "sha512": "e4128aece3ecba0f78c0bcf4e1246feae647b6f625e27c7b49cf43d401b1e6cb1240b37d9c87727326587acf18062e922364652ea4611fbf063f970f07278a1d",
+          "sha256": "9ef79d4db1921c7529cb8671bf5070835223283511ed11f2724d2ac436c98645",
+          "sha1": "221d9aa6a62a91936b1dd63df38b73a78d760c4a",
+          "md5": "d6bf00806172cf83c717d361d4298338"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-localization-2026.11.6-javadoc.jar",
+          "url": "frc-localization-2026.11.6-javadoc.jar",
+          "size": 4525052,
+          "sha512": "2259318bdebcd5919d7e07c44290fcaa2b5f03f93c2c99d3a3675d62055e826df9c5891ba40c589c5badcddb73eeeb8a5eadf7b1f26974aeb7f9d366e9a608e3",
+          "sha256": "98bda983be90d88f9fd35d950fad02fe71f09bac3767abb98c78199cba49b2b6",
+          "sha1": "572cbc02db845368eca3b81f53d3544d59764cf2",
+          "md5": "86026faa923372bea44e3dec9ce28bec"
+        }
+      ]
+    }
+  ]
+}
