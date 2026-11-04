@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.michaelgrundvig.frc</groupId>
+  <artifactId>visor</artifactId>
+  <version>2026.11.6</version>
+  <packaging>pom</packaging>
+  <name>Visor</name>
+  <description>AprilTag vision for an FRC robot's coprocessor, built for arm64: the program a robot's deploy puts on each coprocessor.</description>
+  <url>https://github.com/mikegrundvig/frc-visor</url>
+  <licenses>
+    <license>
+      <name>GNU General Public License, version 3 only</name>
+      <url>https://github.com/mikegrundvig/frc-visor/blob/main/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/mikegrundvig/frc-visor</url>
+  </scm>
+</project>
