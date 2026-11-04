@@ -1,0 +1,167 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-robot-model",
+    "version": "2026.11.7",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "org.wpilib.wpimath",
+          "module": "wpimath-java",
+          "version": {
+            "requires": "2027.0.0-alpha-7"
+          }
+        },
+        {
+          "group": "org.wpilib.wpiunits",
+          "module": "wpiunits-java",
+          "version": {
+            "requires": "2027.0.0-alpha-7"
+          }
+        },
+        {
+          "group": "org.wpilib.wpiutil",
+          "module": "wpiutil-java",
+          "version": {
+            "requires": "2027.0.0-alpha-7"
+          }
+        },
+        {
+          "group": "org.wpilib.fields",
+          "module": "fields-java",
+          "version": {
+            "requires": "2027.0.0-alpha-7"
+          }
+        },
+        {
+          "group": "org.ejml",
+          "module": "ejml-simple",
+          "version": {
+            "requires": "0.46.0"
+          }
+        },
+        {
+          "group": "us.hebi.quickbuf",
+          "module": "quickbuf-runtime",
+          "version": {
+            "requires": "1.4"
+          }
+        },
+        {
+          "group": "io.avaje",
+          "module": "avaje-jsonb",
+          "version": {
+            "requires": "3.14"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-robot-model-2026.11.7.jar",
+          "url": "frc-robot-model-2026.11.7.jar",
+          "size": 1392613,
+          "sha512": "191c68c33dfaf31b9c7ef6be8b325ed181c5c267cbd729e9cca5d8962031d656f99300d5f3d4a836ab6e09b8749400257c25caf58d457aed67cf478efd1bf329",
+          "sha256": "bc531a15dbb16b7d269f9dcafb516f4123a835fde049fd0ad3e40854be5598c2",
+          "sha1": "41251c537d9cffefeda767b292a2751124ebf670",
+          "md5": "efce611311b62df9777d122a39a4c52b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-robot-model-2026.11.7.jar",
+          "url": "frc-robot-model-2026.11.7.jar",
+          "size": 1392613,
+          "sha512": "191c68c33dfaf31b9c7ef6be8b325ed181c5c267cbd729e9cca5d8962031d656f99300d5f3d4a836ab6e09b8749400257c25caf58d457aed67cf478efd1bf329",
+          "sha256": "bc531a15dbb16b7d269f9dcafb516f4123a835fde049fd0ad3e40854be5598c2",
+          "sha1": "41251c537d9cffefeda767b292a2751124ebf670",
+          "md5": "efce611311b62df9777d122a39a4c52b"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-robot-model-2026.11.7-sources.jar",
+          "url": "frc-robot-model-2026.11.7-sources.jar",
+          "size": 417688,
+          "sha512": "1fd692825ade8182dba438a6b7a413a8ba89c47e3479b53cfc60aafaf48784d33dc636b427207c56140e7b2401ee18dbdd01e6414fec6ff3a1d65c1a0b7d359e",
+          "sha256": "7c2b1f482282461eb714fef749d41433668972967601168c8bf254cedae4d076",
+          "sha1": "3bb0948d6d95e376a466e922e054f3fcd6e9763e",
+          "md5": "336005379a09dd35d6d722bd595e5cca"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-robot-model-2026.11.7-javadoc.jar",
+          "url": "frc-robot-model-2026.11.7-javadoc.jar",
+          "size": 5514445,
+          "sha512": "77b6ba1e55f6a9c8e6bbfca9e9269d7e7413afec15d1ddd371bc545593daba0a864fdebd0fe9ea3c89cb5d1a489f3a2c5bae8874c13944181d690cef5942fab6",
+          "sha256": "50876074e8f31b9fabcb8569df6744175c510dbbc8f2e3a4fff606a64a2bad56",
+          "sha1": "4806bb7a8d6379245cc279a9bb68a22ca66b16b1",
+          "md5": "58bd7a884120e3876a65bcc43ca5796a"
+        }
+      ]
+    }
+  ]
+}

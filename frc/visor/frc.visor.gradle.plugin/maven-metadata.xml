@@ -3,13 +3,14 @@
   <groupId>frc.visor</groupId>
   <artifactId>frc.visor.gradle.plugin</artifactId>
   <versioning>
-    <latest>2026.11.6</latest>
-    <release>2026.11.6</release>
+    <latest>2026.11.7</latest>
+    <release>2026.11.7</release>
     <versions>
       <version>2026.11.4</version>
       <version>2026.11.5</version>
       <version>2026.11.6</version>
+      <version>2026.11.7</version>
     </versions>
-    <lastUpdated>20261104013159</lastUpdated>
+    <lastUpdated>20261104054655</lastUpdated>
   </versioning>
 </metadata>
