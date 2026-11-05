@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-visor-client",
+    "version": "2026.11.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-visor-client-2026.11.8.jar",
+          "url": "frc-visor-client-2026.11.8.jar",
+          "size": 28713,
+          "sha512": "22ba7e006255ba55ca59652d79a4beda51b6dd61e3d03ab27098d703d532f1a6741ae6a5a8f96c7559c71e88fafcb9bed27a36b8362486844178a30feca230cf",
+          "sha256": "7ea994b701db9022277682ab629bfdc6c2078c1187fc6fe33213e85b82fe50e9",
+          "sha1": "93c62d178f596acdb26d03111e53c93d11f905c6",
+          "md5": "034a9f8106b4eb41c34b771cd5f509e7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-visor-client-2026.11.8.jar",
+          "url": "frc-visor-client-2026.11.8.jar",
+          "size": 28713,
+          "sha512": "22ba7e006255ba55ca59652d79a4beda51b6dd61e3d03ab27098d703d532f1a6741ae6a5a8f96c7559c71e88fafcb9bed27a36b8362486844178a30feca230cf",
+          "sha256": "7ea994b701db9022277682ab629bfdc6c2078c1187fc6fe33213e85b82fe50e9",
+          "sha1": "93c62d178f596acdb26d03111e53c93d11f905c6",
+          "md5": "034a9f8106b4eb41c34b771cd5f509e7"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-visor-client-2026.11.8-sources.jar",
+          "url": "frc-visor-client-2026.11.8-sources.jar",
+          "size": 23436,
+          "sha512": "c57d15582eb5c4c609facab47f9db7b1939af22bb32a26340caa2d19cdfb94f1701858e8933084776fd6261946c484edd4d0234f8318a8a7a754bbc9a687e8c7",
+          "sha256": "e61dc972ed4883db36e7f9c32fe849a90a8fd7f68d2a018538a30cba8bf1baf1",
+          "sha1": "0599019b4c5666e9b13d0dc137edaebeda9bc79f",
+          "md5": "9e93ba3b17b14669aaa7dda972bdb14d"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-visor-client-2026.11.8-javadoc.jar",
+          "url": "frc-visor-client-2026.11.8-javadoc.jar",
+          "size": 4198156,
+          "sha512": "3653ef7052d6e307866da4e185df66de957b52c2e2c065896442827cade0337586646df48f79129cf19422b7c344afe0f1d59b593cdb884a80610a4a9f8e315f",
+          "sha256": "33891cc736625d61b9d39634a0efebc727b759e1cae73091f3c7173bda563921",
+          "sha1": "9f5cca6411bc74ba09478742f506296548c40e84",
+          "md5": "8df5a341ad971a615533fe41cf640d11"
+        }
+      ]
+    }
+  ]
+}
