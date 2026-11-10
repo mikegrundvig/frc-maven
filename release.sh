@@ -38,6 +38,16 @@ for name in model localization pitwall runtime; do
     exit 1
   fi
 done
+
+# A version once published stays as it is (README.md), so a release never writes over one. Visor's
+# own artifacts are left out: they carry Visor's version, which can be the same date.
+published="$(git -C "$repo" ls-files -- \
+  ":(glob)com/michaelgrundvig/frc/*/$version/**" ":(glob)frc/*/*/$version/**" \
+  ":(exclude)com/michaelgrundvig/frc/visor/**" ":(exclude)com/michaelgrundvig/frc/frc-visor-client/**")"
+if [[ -n "$published" ]]; then
+  echo "$version is already published (${published%%$'\n'*} among others): release a new version" >&2
+  exit 1
+fi
 echo "Releasing $version from $libs into $repo"
 
 for name in model localization pitwall runtime; do
@@ -48,7 +58,7 @@ done
 cd "$repo"
 git add com frc
 if git diff --cached --quiet; then
-  echo "Nothing changed: $version is published as it was."
+  echo "Nothing changed: the libraries published no files for $version."
 else
   git commit -q -m "Release $version"
   echo "Committed: $(git log --oneline -1)"

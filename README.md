@@ -83,7 +83,11 @@ plugin's marker group too (`includeGroup "frc.advantagescope-assets"`), then
 
 Each library publishes on its own the same way: `./gradlew publishToFrcMaven` in its clone writes
 into `../frc-maven`, or the folder `-PfrcMavenDir=<folder>` names. A version once pushed stays as
-it is: publish a fix as a new version, since builds check the files' checksums.
+it is: publish a fix as a new version, since builds check the files' checksums. `release.sh`
+refuses a version that is already here, and `check-published.sh <base>` (run by
+`.github/workflows/published.yml` on every push and pull request) fails a change to any file in a
+version folder that `<base>` has; a new version's folder and the `maven-metadata.xml` files are
+allowed. `test/published-test.sh` tests both.
 
 ## License
 

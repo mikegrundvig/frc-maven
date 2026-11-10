@@ -1,0 +1,43 @@
+name: Published versions
+
+# A version once published stays as it is (README.md): this fails a push or a pull request that
+# changes, deletes or adds a file inside a version folder that was already there. A new version's
+# folder and the maven-metadata.xml files are allowed. The checks are the scripts, which run the
+# same anywhere: ./check-published.sh <base>, and test/published-test.sh for the check itself.
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  published:
+    name: No published version changed
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        shell: bash
+    steps:
+      # Pinned to a commit (the version beside it), so a moved tag can't change what runs.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # The whole history, so the base commit is there to compare with.
+          fetch-depth: 0
+      - name: The check's own test
+        run: test/published-test.sh
+      - name: Compare with the base
+        env:
+          # A pull request compares with its base branch's head; a push with the commit it moved the
+          # branch from, which is all zeros for a new branch: that compares with where it left the
+          # default branch.
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if [[ "$BASE" =~ ^0+$ ]]; then
+            echo "A new branch: compared with the default branch instead."
+            BASE="$(git merge-base HEAD "origin/$DEFAULT_BRANCH")"
+          fi
+          ./check-published.sh "$BASE"
