@@ -1,0 +1,139 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-pitwall",
+    "version": "2026.11.13",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-model",
+          "version": {
+            "requires": "2026.11.13"
+          }
+        },
+        {
+          "group": "org.wpilib.wpiunits",
+          "module": "wpiunits-java",
+          "version": {
+            "requires": "2027.0.0-alpha-7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-pitwall-2026.11.13.jar",
+          "url": "frc-pitwall-2026.11.13.jar",
+          "size": 1025253,
+          "sha512": "04fe0b8d6a7c9818ea32a18586a3ee2d0f29594cd0f5088465fd062244e976273cd9c50c3fe43ad88188475b8f7131b939555d681ce9bf5bd4da61d1cfba27d5",
+          "sha256": "b40c1ffab947444bb2d6336b4bb2738f5d5006c8bffcca2de63960b84e90e35f",
+          "sha1": "c3d9d205885fb19394982dabab0e11d02059b582",
+          "md5": "5ce99f87a1bf387f0dee202488b273a8"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "com.michaelgrundvig.frc",
+          "module": "frc-robot-model",
+          "version": {
+            "requires": "2026.11.13"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "frc-pitwall-2026.11.13.jar",
+          "url": "frc-pitwall-2026.11.13.jar",
+          "size": 1025253,
+          "sha512": "04fe0b8d6a7c9818ea32a18586a3ee2d0f29594cd0f5088465fd062244e976273cd9c50c3fe43ad88188475b8f7131b939555d681ce9bf5bd4da61d1cfba27d5",
+          "sha256": "b40c1ffab947444bb2d6336b4bb2738f5d5006c8bffcca2de63960b84e90e35f",
+          "sha1": "c3d9d205885fb19394982dabab0e11d02059b582",
+          "md5": "5ce99f87a1bf387f0dee202488b273a8"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-pitwall-2026.11.13-sources.jar",
+          "url": "frc-pitwall-2026.11.13-sources.jar",
+          "size": 710841,
+          "sha512": "2c917faa6fee4b55d47a3bfdebf0443331e3242cee5f99a07f5848de7961c66608798844e13d099fdca894b6ba0095442b2c015240b29050cb7ca01aa17099b8",
+          "sha256": "24e7a640c12cfd132205a59e8e873c4b88948e680fc89d0d0e8b91c11c9d38a2",
+          "sha1": "2ed4c1fdc380a733e1771c8aa5d0a11cb4353541",
+          "md5": "ff60c86be346d57641a97732df8b2c4e"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-pitwall-2026.11.13-javadoc.jar",
+          "url": "frc-pitwall-2026.11.13-javadoc.jar",
+          "size": 5043734,
+          "sha512": "d2c83e4ed059552a14af79cc6587aef419bb2db86385bfc2c7dc00ecdf7dc3127ff84274bef84765d47b62a006c0061b465247d1e86939073b9cfb4379ea8b05",
+          "sha256": "f60555fc198c41f3978fc3ddb1e760dc0040d75d17d3a970e7ab2b0e537a688a",
+          "sha1": "642d0d1e8090e7dd759bd1706b21476ac7c030d2",
+          "md5": "e5179cbc9337e0c950002a2674c3b01c"
+        }
+      ]
+    }
+  ]
+}

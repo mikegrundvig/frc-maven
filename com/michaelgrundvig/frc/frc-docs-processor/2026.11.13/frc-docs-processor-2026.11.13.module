@@ -1,0 +1,100 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-docs-processor",
+    "version": "2026.11.13",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "frc-docs-processor-2026.11.13.jar",
+          "url": "frc-docs-processor-2026.11.13.jar",
+          "size": 17310,
+          "sha512": "709ee0a22f1d72182b7d91932f6b843b5dc13933c5cadc68cd4b23a09f8fb10451a9921962c4f2033fd81e4e04e2ae6aed9c09857eb4f1f71b2bb8d23ec34839",
+          "sha256": "31070bb414742532e1fac559a375509db365f225942bfa2791bcb18cf2d8b5b9",
+          "sha1": "57f3f5a44f43c19083f4dd302a156ca71b664ae0",
+          "md5": "8f2a7b931e87cd2f6b9d41b7de6e7543"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-docs-processor-2026.11.13.jar",
+          "url": "frc-docs-processor-2026.11.13.jar",
+          "size": 17310,
+          "sha512": "709ee0a22f1d72182b7d91932f6b843b5dc13933c5cadc68cd4b23a09f8fb10451a9921962c4f2033fd81e4e04e2ae6aed9c09857eb4f1f71b2bb8d23ec34839",
+          "sha256": "31070bb414742532e1fac559a375509db365f225942bfa2791bcb18cf2d8b5b9",
+          "sha1": "57f3f5a44f43c19083f4dd302a156ca71b664ae0",
+          "md5": "8f2a7b931e87cd2f6b9d41b7de6e7543"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-docs-processor-2026.11.13-sources.jar",
+          "url": "frc-docs-processor-2026.11.13-sources.jar",
+          "size": 11786,
+          "sha512": "98102277b8d5f1fcb1d41ea746cd446331caf0eaa20fcba9cf21d7a332a9380e5371890c6149a0334c4180c2afecb1430fc6e2f5ddede88af6bc481f7f97bbf4",
+          "sha256": "3db5837ebd880985b120fa9702d21489aae15c0878d23c883ca2e85954438374",
+          "sha1": "0b9e6302c634d765f6c274958d0383b8642b875d",
+          "md5": "6a2aa23f8417c7f771d83a66f8d4362f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-docs-processor-2026.11.13-javadoc.jar",
+          "url": "frc-docs-processor-2026.11.13-javadoc.jar",
+          "size": 4148957,
+          "sha512": "abd2b609101b6355753899762f0f3bdc5dc0b300b81e08893ea7a6b5384a70d3ea8ca0610c2db3a33cd3fc0ce0e8b82b81583fa6c4e55b455fc8d354824d13ec",
+          "sha256": "d91e3966aaf3ae820ba24ed0d27077acf9a83f4a3bf205102089713a40978a50",
+          "sha1": "4bc6a8cf877bedbe151a931aaaeb94dbea9d2c9d",
+          "md5": "cabead418f2a5726b201a72e29a8585e"
+        }
+      ]
+    }
+  ]
+}

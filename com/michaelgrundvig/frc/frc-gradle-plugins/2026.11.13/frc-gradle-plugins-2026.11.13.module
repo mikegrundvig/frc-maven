@@ -1,0 +1,100 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.michaelgrundvig.frc",
+    "module": "frc-gradle-plugins",
+    "version": "2026.11.13",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "frc-gradle-plugins-2026.11.13.jar",
+          "url": "frc-gradle-plugins-2026.11.13.jar",
+          "size": 62955,
+          "sha512": "c142be707b8c4158b436c224ddae6dc52196f6e6c472c00d99ed07c903ecbff5fb5a6ce0bebb55f66667c6a334254e88cb7325ecd1c45779b0aa21658b74e5c2",
+          "sha256": "edd1bfd191381b64fc31dcaa17ea149e89b127286d1b789cca34a57ad2a18300",
+          "sha1": "2cc19d91cc7aebbd716e701d92f23e6c99c9a69e",
+          "md5": "d54b3c7b3b37293948835c6637b75df5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-gradle-plugins-2026.11.13.jar",
+          "url": "frc-gradle-plugins-2026.11.13.jar",
+          "size": 62955,
+          "sha512": "c142be707b8c4158b436c224ddae6dc52196f6e6c472c00d99ed07c903ecbff5fb5a6ce0bebb55f66667c6a334254e88cb7325ecd1c45779b0aa21658b74e5c2",
+          "sha256": "edd1bfd191381b64fc31dcaa17ea149e89b127286d1b789cca34a57ad2a18300",
+          "sha1": "2cc19d91cc7aebbd716e701d92f23e6c99c9a69e",
+          "md5": "d54b3c7b3b37293948835c6637b75df5"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-gradle-plugins-2026.11.13-sources.jar",
+          "url": "frc-gradle-plugins-2026.11.13-sources.jar",
+          "size": 36669,
+          "sha512": "d90c251f8d6426d282a69fdde13d44c71e3993d2311234fdf6f59fcf0b30e6f5d7bbbc2737c6abf08808f2075b034355902efd53e6c0c29b033ae9890438a474",
+          "sha256": "9ea1fb043d4f0e9ae76fcfaf8775538131b9efe1c05a555bba59ffa7f4473dec",
+          "sha1": "f931fe58675df53ba1cbbbf0c80f5955f2e520fa",
+          "md5": "1cf1ddadefca3f6835158b2ca71e364a"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "frc-gradle-plugins-2026.11.13-javadoc.jar",
+          "url": "frc-gradle-plugins-2026.11.13-javadoc.jar",
+          "size": 4178237,
+          "sha512": "318c6c2e2134c19f86cd82376056f478a83937e9569a85041c83c6dbab46812bbfa5151695909ae84124255fb5c874d7aa807c1ec2e29df95652cb51c0c2b962",
+          "sha256": "218ce41d8e7249529e960f9895fa1886cda7b1f6909b9dd6ebc59280078af4fd",
+          "sha1": "461d287a949449c77d26c7bd906549ce8653607c",
+          "md5": "53578521d2279b576b19049b5d611bf7"
+        }
+      ]
+    }
+  ]
+}
